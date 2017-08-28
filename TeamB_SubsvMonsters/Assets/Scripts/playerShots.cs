@@ -20,9 +20,10 @@ public class playerShots : MonoBehaviour {
 	{
 		float nextFire = Time.time + fireRate;
 
-		if (Input.GetButton ("Fire1") && Time.time > nextFire)
+		if (Input.GetMouseButtonDown (0)) //&& Time.time > nextFire)
 		{
 			//GameObject clone = 
+			Debug.Log("Left Click");
 			Instantiate(shot, shotSpawn.position, shotSpawn.rotation); //as GameObject;
 			//audioSource.Play();
 		}
