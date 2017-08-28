@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\bulletFire.cs" />
      <Compile Include="Assets\Scripts\destroyByContact.cs" />
      <Compile Include="Assets\Scripts\enemyMovement.cs" />
+     <Compile Include="Assets\Scripts\ObjectPoolerScript.cs" />
      <Compile Include="Assets\Scripts\playerMovement.cs" />
      <Compile Include="Assets\Scripts\playerShots.cs" />
      <Compile Include="Assets\Scripts\weaponController.cs" />

@@ -23,4 +23,13 @@ public class bulletDestroy : MonoBehaviour {
 	void OnDisable () {
 		CancelInvoke ();
 	}
+
+	//destorys enemy if it collides with bullet
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == "Enemy" )
+		{
+			Destroy(other.gameObject);
+		}
+
+	}
 }
