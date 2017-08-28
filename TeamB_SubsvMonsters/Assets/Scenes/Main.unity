@@ -258,6 +258,10 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1609873502844514, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
   m_IsPrefabParent: 0
@@ -305,6 +309,10 @@ Prefab:
       propertyPath: pooledObject
       value: 
       objectReference: {fileID: 100002, guid: 0dc44f779479a4121b46192566c43a25, type: 2}
+    - target: {fileID: 1525152577490428, guid: 086f81ed103804dccb89d0a799ca8088, type: 2}
+      propertyPath: m_Name
+      value: BulletPooler
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 086f81ed103804dccb89d0a799ca8088, type: 2}
   m_IsPrefabParent: 0
