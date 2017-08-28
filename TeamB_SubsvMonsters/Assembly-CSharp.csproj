@@ -65,6 +65,7 @@
      <Compile Include="Assets\2D Scrolling Shooter\Scripts\WaveScript.cs" />
      <Compile Include="Assets\Scripts\bulletDestroy.cs" />
      <Compile Include="Assets\Scripts\bulletFire.cs" />
+     <Compile Include="Assets\Scripts\CamController.cs" />
      <Compile Include="Assets\Scripts\destroyByContact.cs" />
      <Compile Include="Assets\Scripts\enemyMovement.cs" />
      <Compile Include="Assets\Scripts\ObjectPoolerScript.cs" />
