@@ -360,11 +360,25 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2142067151}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93f316a789bdd4068af5c3084abef937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 0}
-  shotSpawn: {fileID: 0}
-  fireRate: 0
+  shot: {fileID: 100002, guid: 0dc44f779479a4121b46192566c43a25, type: 2}
+  shotSpawn: {fileID: 23310268}
+  fireRate: 1
+--- !u!114 &2142067158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2142067151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dc56002c5ff84b018b75a7d86fa9b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireTime: 0.5
+  bullet: {fileID: 100002, guid: 0dc44f779479a4121b46192566c43a25, type: 2}
+  pooledAmount: 20
