@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerShots : MonoBehaviour {
+public class PlayerShots : MonoBehaviour {
 
 	public GameObject shot;
 	public Transform shotSpawn;

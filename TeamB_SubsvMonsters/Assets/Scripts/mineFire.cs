@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletFire : MonoBehaviour {
+public class MineFire : MonoBehaviour {
 
-	public float fireTime = 0.5f;
+	public float fireTime = 3f;
 
 	void Start () 
 	{
@@ -13,15 +13,16 @@ public class BulletFire : MonoBehaviour {
 
 	void Update()
 	{
-		if (Input.GetButtonDown("Fire1")){
-			InvokeRepeating("Fire", fireTime, fireTime);
+		if (Input.GetButtonDown("Fire2")){
+			Debug.Log ("Firing mine");
+			Invoke("Fire", fireTime);
 		}
 
-		if (Input.GetButtonUp("Fire1")){
+		if (Input.GetButtonUp("Fire2")){
 			CancelInvoke("Fire");
 		}
 	}
-	
+
 	// Update is called once per frame
 	void Fire () 
 	{
