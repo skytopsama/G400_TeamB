@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5000000}
   - component: {fileID: 5800000}
   - component: {fileID: 11400000}
-  - component: {fileID: 114553901998103576}
+  - component: {fileID: 114893596496808804}
   m_Layer: 10
   m_Name: PlayerBullet 1
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.11494489, y: -1.4218853, z: 0}
+  m_LocalPosition: {x: 107.29652, y: 52.48013, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca46e3997c3764d38bce3807f7b1c4c5, type: 3}
   m_Name: 
@@ -135,7 +135,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100002}
   m_IsPrefabParent: 1
---- !u!114 &114553901998103576
+--- !u!114 &114893596496808804
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -143,8 +143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0228dc77fd50a4f11ab3fb8ed073079c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dc56002c5ff84b018b75a7d86fa9b5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  lifeTime: 2
+  fireTime: 0.5
