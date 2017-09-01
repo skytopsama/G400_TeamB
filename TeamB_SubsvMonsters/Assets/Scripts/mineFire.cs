@@ -4,27 +4,30 @@ using UnityEngine;
 
 public class MineFire : MonoBehaviour {
 
-	public float fireTime = 3f;
+	public GameObject mine;
+
+	public float dropRate;
+	float nextDrop;
+
+	Transform mineSpawn;
 
 	void Start () 
 	{
-		//InvokeRepeating("Fire", fireTime, fireTime);		
+		mineSpawn = this.transform;		
 	}
 
 	void Update()
 	{
-		if (Input.GetButtonDown("Fire2")){
-			Debug.Log ("Firing mine");
-			Invoke("Fire", fireTime);
-		}
+		if (Input.GetButtonDown("Fire2") && Time.time > nextDrop){
+			Debug.Log ("Dropping mine");
 
-		if (Input.GetButtonUp("Fire2")){
-			CancelInvoke("Fire");
+			nextDrop = Time.time + dropRate;
+			Instantiate(mine, mineSpawn.position, mineSpawn.rotation);
 		}
 	}
 
 	// Update is called once per frame
-	void Fire () 
+	void Deploy () 
 	{
 		GameObject obj = ObjectPoolerScript.current.GetPooledObject ();
 

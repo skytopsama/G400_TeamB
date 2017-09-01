@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\EnemySpawning.cs" />
      <Compile Include="Assets\Scripts\MineDestroy.cs" />
      <Compile Include="Assets\Scripts\MineFire.cs" />
+     <Compile Include="Assets\Scripts\MyExplosion.cs" />
      <Compile Include="Assets\Scripts\ObjectPoolerScript.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />

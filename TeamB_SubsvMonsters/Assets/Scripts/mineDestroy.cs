@@ -3,18 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MineDestroy : MonoBehaviour {
+	public GameObject explosion;
 	public float lifeTime;
-	//public int power;
 
+	Transform explosionSpawn;
+
+	void Awake()
+	{
+		explosionSpawn = this.transform;
+	}
 
 	// Use this for initialization
 	void OnEnable () {
-		Invoke ("Destroy", lifeTime);
+		Invoke("Die", lifeTime);
 	}
 
-	void Destroy(){
+	void Die(){
 		Debug.Log ("mine destroyed");
-		gameObject.SetActive (false);
+		//Instantiate (explosion, explosionSpawn.position, explosionSpawn.rotation);
+		Destroy(this.gameObject);
 	}
 
 	// Update is called once per frame
@@ -26,7 +33,10 @@ public class MineDestroy : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Enemy" )
 		{
+			
 			Destroy(other.gameObject);
+			Destroy (gameObject);
+			Instantiate (explosion, explosionSpawn.position, explosionSpawn.rotation);
 		}
 
 	}
