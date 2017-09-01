@@ -6,9 +6,10 @@ public class EnemySpawning : MonoBehaviour {
 
 	public List<GameObject> spawnBoxes;
 	public GameObject enemy;
+	public float spawnTime;
 
 	void Start(){
-		InvokeRepeating ("SpawnEnemies", 0.5f, 5f);
+		InvokeRepeating ("SpawnEnemies", 0.5f, spawnTime);
 	}
 
 	void SpawnEnemies()
@@ -25,6 +26,7 @@ public class EnemySpawning : MonoBehaviour {
 		Quaternion spawnRotation = Quaternion.identity;
 
 		Instantiate (enemy, spawnPosition, spawnRotation);
+		Debug.Log (spawnPosition);
 	}
 
 }

@@ -11,10 +11,10 @@ public class BulletDestroy : MonoBehaviour {
 	// Use this for initialization
 	void OnEnable () {
 		GetComponent<Rigidbody2D>().velocity = transform.up.normalized * speed;
-		Invoke ("Destroy", lifeTime);
+		Invoke ("Repool", lifeTime);
 	}
 
-	void Destroy(){
+	void Repool(){
 		Debug.Log ("bullet destroyed");
 		gameObject.SetActive (false);
 	}
@@ -29,6 +29,7 @@ public class BulletDestroy : MonoBehaviour {
 		if (other.tag == "Enemy" )
 		{
 			Destroy(other.gameObject);
+			Repool ();
 		}
 
 	}
