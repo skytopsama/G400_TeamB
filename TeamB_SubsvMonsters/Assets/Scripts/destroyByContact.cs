@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class destroyByContact : MonoBehaviour {
 
-	//public Slider healthSlider;
-
 
 	void OnTriggerEnter2D (Collider2D other){
 		if (other.tag == "Enemy" )
