@@ -9,6 +9,12 @@ public class EnemyMovement : MonoBehaviour {
 	private float minDistance = 0.1f;
 	private float range;
 
+	void Start()
+	{
+		GameObject player = GameObject.Find ("Player");
+		target = player.transform;
+	}
+
 	void Update ()
 	{
 		range = Vector2.Distance (transform.position, target.position);
