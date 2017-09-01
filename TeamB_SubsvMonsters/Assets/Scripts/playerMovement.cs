@@ -6,16 +6,14 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float speed;
 
-	public float startingHealth = 100f;
-	public float currentHealth = 100f;
 	//public Slider healthSlider;
-	PlayerHealth playerHealth;
+	PlayerHealth hp;
 	bool Dead;
 
 	void Awake ()
 	{
-		playerHealth = GetComponent <PlayerHealth> ();
-		currentHealth = startingHealth;
+		hp = GetComponent <PlayerHealth> ();
+		hp.currentHealth = hp.startingHealth;
 	}
 
 	void Start ()
@@ -39,23 +37,23 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Update ()
 	{
-		if (playerHealth.currentHealth == 0 && Dead == false)
+		if (hp.currentHealth == 0 && Dead == false)
 		{
-			Death;
+			Death();
 		}
 	}
 
 	void Death ()
 	{
 		Dead = true;
-		Player.Destroy;
+		Destroy(this);
 	}
 		
 	void OnTriggerEnter2D (Collider2D other){
 		if (other.tag == "Enemy" )
 		{
 			Destroy(other.gameObject);
-			playerHealth.currentHealth -= 30;
+			hp.currentHealth -= 30;
 		}
 	}
 }

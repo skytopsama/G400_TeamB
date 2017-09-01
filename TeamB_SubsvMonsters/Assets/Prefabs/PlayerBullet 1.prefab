@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 21200000}
   - component: {fileID: 5000000}
   - component: {fileID: 5800000}
-  - component: {fileID: 11400000}
   - component: {fileID: 114893596496808804}
+  - component: {fileID: 114051568883749920}
   m_Layer: 10
   m_Name: PlayerBullet 1
   m_TagString: Untagged
@@ -68,20 +68,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.04}
   serializedVersion: 2
   m_Radius: 0.03
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca46e3997c3764d38bce3807f7b1c4c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  lifeTime: 1
-  power: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -135,13 +121,26 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100002}
   m_IsPrefabParent: 1
---- !u!114 &114893596496808804
+--- !u!114 &114051568883749920
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0228dc77fd50a4f11ab3fb8ed073079c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  lifeTime: 2
+--- !u!114 &114893596496808804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dc56002c5ff84b018b75a7d86fa9b5a, type: 3}
   m_Name: 

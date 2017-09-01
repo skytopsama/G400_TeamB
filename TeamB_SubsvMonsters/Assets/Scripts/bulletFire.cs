@@ -8,13 +8,13 @@ public class BulletFire : MonoBehaviour {
 
 	void Start () 
 	{
-		//InvokeRepeating("Fire", fireTime, fireTime);		
+		//InvokeRepeating ("Fire", 0f, fireTime);	
 	}
 
 	void Update()
 	{
 		if (Input.GetButtonDown("Fire1")){
-			InvokeRepeating("Fire", fireTime, fireTime);
+			InvokeRepeating("Fire", 0f, fireTime);
 		}
 
 		if (Input.GetButtonUp("Fire1")){
@@ -25,6 +25,7 @@ public class BulletFire : MonoBehaviour {
 	// Update is called once per frame
 	void Fire () 
 	{
+		//Debug.Log ("FIRE!");
 		GameObject obj = ObjectPoolerScript.current.GetPooledObject ();
 
 		if (obj == null) return;
