@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-	public int startingHealth;
-	public int currentHealth;
-	PlayerHealth playerHealth;
+	public float startingHealth;
+	public float currentHealth;
 
 	void Awake ()
 	{
@@ -16,6 +15,14 @@ public class PlayerHealth : MonoBehaviour {
 	void OnGUI()
 	{
 		GUI.Label (new Rect(10, 10, 100, 20), "Health:" + currentHealth);
+	}
+
+	void Update ()
+	{
+		if (currentHealth < 0)
+		{
+			currentHealth = 0;
+		}
 	}
 
 	/*void Damage ()
