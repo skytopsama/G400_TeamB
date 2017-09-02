@@ -21,12 +21,12 @@ public class CustomizationScreen : MonoBehaviour {
 		GUI.Box (new Rect (100, 200, 75, 75), HeadTexture);
 		GUI.Box (new Rect (100, 275, 75, 75), BodyTexture);
 		GUI.Box (new Rect (100, 350, 75, 75), ThrusterTexture);
-		if (Input.GetButtonDown ("Fire1"))
+		/*if (Input.GetButtonDown ("Fire1"))
 		{
 			if (BodyTexture)
 			{
-
+				
 			}
-		}
+		}*/
 	}
 }

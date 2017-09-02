@@ -9,6 +9,14 @@ public class EnemyMovement : MonoBehaviour {
 	private float minDistance = 0.1f;
 	private float range;
 
+	int currentScore;
+	PlayerScore playerScore;
+
+	void Awake ()
+	{
+		playerScore = GetComponent <PlayerScore> ();
+	}
+
 	void Start()
 	{
 		GameObject player = GameObject.Find ("Player");
@@ -23,6 +31,15 @@ public class EnemyMovement : MonoBehaviour {
 			Debug.Log (range);
 
 			transform.position = Vector2.MoveTowards (transform.position, target.position, speed * Time.deltaTime);
+		}
+	}
+
+	void OnTriggerEnter2D (Collider2D other)
+	{
+		if (other.tag == "Bullet1" )
+		{
+			Destroy(other.gameObject);
+			//playerScore.currentScore += 10;
 		}
 	}
 }
