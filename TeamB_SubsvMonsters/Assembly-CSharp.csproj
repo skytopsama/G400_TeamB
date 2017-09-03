@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\BulletFire.cs" />
      <Compile Include="Assets\Scripts\CamController.cs" />
      <Compile Include="Assets\Scripts\CustomizationScreen.cs" />
+     <Compile Include="Assets\Scripts\DestroyByContact.cs" />
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\EnemySpawning.cs" />
      <Compile Include="Assets\Scripts\MineDestroy.cs" />
@@ -75,7 +76,6 @@
      <Compile Include="Assets\Scripts\ObjectPoolerScript.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\PlayerScore.cs" />
      <Compile Include="Assets\Scripts\WeaponController.cs" />
      <None Include="Assets\2D Scrolling Shooter\Fonts\PressStart2P-Regular\OFL.txt" />
      <None Include="Assets\2D Scrolling Shooter\_ReadMe.txt" />
