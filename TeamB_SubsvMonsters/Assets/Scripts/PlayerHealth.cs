@@ -16,14 +16,10 @@ public class PlayerHealth : MonoBehaviour {
 	{
 		GUI.Label (new Rect (10, 10, 100, 20), "Health:" + currentHealth);
 	}
-	/*void Update ()
-	{
-		GUIText (currentHealth + "/" + startingHealth);
-	}*/
+
 
 	public void TakeDamage (float amount)
 	{
 		currentHealth -= amount;
-		//hungerSlider.value = currentHunger;
 	}
 }

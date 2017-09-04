@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreScript : MonoBehaviour {
+public class PlayerScore : MonoBehaviour {
 
-	public static int score;
+	public int score;
 
 	void Awake ()
 	{
@@ -14,5 +14,10 @@ public class ScoreScript : MonoBehaviour {
 	void OnGUI ()
 	{
 		GUI.Label (new Rect (10, 30, 100, 20), "Score:" + score);
+	}
+
+	public void ScoreValue (int amount)
+	{
+		score += amount;
 	}
 }
