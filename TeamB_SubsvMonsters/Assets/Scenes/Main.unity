@@ -108,11 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &166135297 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4614470333522988, guid: 5d34f8900e1d743afa136576a73dc46a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1017960086}
 --- !u!1 &547150061
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,43 +384,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1609873502844514, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1609873502844514, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 114693861940459642, guid: 5d34f8900e1d743afa136576a73dc46a,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114698297707896138, guid: 5d34f8900e1d743afa136576a73dc46a,
-        type: 2}
-      propertyPath: startingHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114698297707896138, guid: 5d34f8900e1d743afa136576a73dc46a,
-        type: 2}
-      propertyPath: currentHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 61559526229322616, guid: 5d34f8900e1d743afa136576a73dc46a,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61559526229322616, guid: 5d34f8900e1d743afa136576a73dc46a,
-        type: 2}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114693861940459642, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
-    - {fileID: 114890331863230556, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
-    - {fileID: 114698297707896138, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1306224877
@@ -482,23 +441,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1580319677 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1257529279077896, guid: 5d34f8900e1d743afa136576a73dc46a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1017960086}
---- !u!114 &1580319680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1580319677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc56002c5ff84b018b75a7d86fa9b5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireTime: 0.5
 --- !u!1 &1585404635
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,75 +738,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 50, y: 1}
   m_EdgeRadius: 0
---- !u!1 &2071376184
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2071376185}
-  - component: {fileID: 2071376186}
-  m_Layer: 0
-  m_Name: mineSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2071376185
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2071376184}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.3499999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 166135297}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2071376186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2071376184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e81d3fcf0f84b5d80eafa9c36d7dc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mine: {fileID: 1145371450881046, guid: e666f9a293e1d43bc818161cd4dec43d, type: 2}
-  dropRate: 3
 --- !u!1 &2142067151 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1609873502844514, guid: 5d34f8900e1d743afa136576a73dc46a,
     type: 2}
   m_PrefabInternal: {fileID: 1017960086}
---- !u!114 &2142067152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2142067151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36898b3b087154063ab349e0a5fa90a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 40
---- !u!114 &2142067153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2142067151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 135c84068f33ba542b7639500f0ef86d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 100
