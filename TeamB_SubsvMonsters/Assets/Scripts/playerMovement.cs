@@ -53,7 +53,10 @@ public class PlayerMovement : MonoBehaviour {
 		if (other.tag == "Enemy" )
 		{
 			Destroy(other.gameObject);
-			hp.currentHealth -= 30;
+			if (other.name == "Enemy1")
+			{
+				hp.currentHealth -= 10;
+			}
 		}
 	}
 }

@@ -12,6 +12,10 @@ public class PlayerHealth : MonoBehaviour {
 		currentHealth = startingHealth;
 	}
 
+	void OnGUI ()
+	{
+		GUI.Label (new Rect (10, 10, 100, 20), "Health:" + currentHealth);
+	}
 	/*void Update ()
 	{
 		GUIText (currentHealth + "/" + startingHealth);

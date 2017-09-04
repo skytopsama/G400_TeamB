@@ -5,8 +5,15 @@ using UnityEngine;
 public class BulletDestroy : MonoBehaviour {
 	public int speed;
 	public float lifeTime;
+	//ScoreScript scoreScript;
+	//int score;
 	//public int power;
 
+	/*void Awake ()
+	{
+		scoreScript = GetComponent <ScoreScript> ();
+
+	}*/
 
 	// Use this for initialization
 	void OnEnable () {
@@ -28,6 +35,7 @@ public class BulletDestroy : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Enemy" )
 		{
+			//scoreScript.score += 10;
 			Destroy(other.gameObject);
 			Repool ();
 		}
