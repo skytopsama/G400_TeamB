@@ -151,6 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574524657}
   - component: {fileID: 574524656}
+  - component: {fileID: 574524658}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -189,6 +190,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &574524658
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 574524655}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 259092eb3d7504a4fbb5154bef46140c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &662161064
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,19 +465,27 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4447116919336822, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
       propertyPath: m_LocalPosition.y
       value: -1.33
       objectReference: {fileID: 0}
+=======
+>>>>>>> origin/master
     - target: {fileID: 114903619464600606, guid: 5d34f8900e1d743afa136576a73dc46a,
         type: 2}
       propertyPath: mine
       value: 
+<<<<<<< HEAD
       objectReference: {fileID: 1145371450881046, guid: e666f9a293e1d43bc818161cd4dec43d,
+=======
+      objectReference: {fileID: 1249052188251600, guid: 434e83001c2c1416080575b439a79cd3,
+>>>>>>> origin/master
         type: 2}
     - target: {fileID: 114903619464600606, guid: 5d34f8900e1d743afa136576a73dc46a,
         type: 2}
       propertyPath: dropRate
+<<<<<<< HEAD
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 212013445502989706, guid: 5d34f8900e1d743afa136576a73dc46a,
@@ -428,6 +517,9 @@ Prefab:
         type: 2}
       propertyPath: m_WasSpriteAssigned
       value: 0
+=======
+      value: 5
+>>>>>>> origin/master
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
