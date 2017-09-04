@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-	public int startingHealth;
-	public int currentHealth;
-	PlayerHealth playerHealth;
+	public float startingHealth;
+	public float currentHealth;
 
 	void Awake ()
 	{
@@ -15,7 +14,7 @@ public class PlayerHealth : MonoBehaviour {
 
 	void OnGUI()
 	{
-		GUI.Label (new Rect(10, 10, 100, 20), "Health:" + currentHealth);
+		GUI.Label (new Rect(10, 10, 100, 20), "Hello World!");
 	}
 
 	/*void Damage ()
