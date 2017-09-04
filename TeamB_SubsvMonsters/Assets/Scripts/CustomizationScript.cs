@@ -31,11 +31,12 @@ public class CustomizationScript : MonoBehaviour {
 		}
 	}
 
-	/*void OnMouseDown ()
+	void OnMouseDown ()
 	{
-		if (other.name == "HeadTexture1") {
+		if (HeadTexture1)
+		{
 			
-			//replace sprite
+			//replace head transform
 		}
-	}*/
+	}
 }
