@@ -8,6 +8,7 @@ public class MineDestroy : MonoBehaviour {
 
 	Transform explosionSpawn;
 
+
 	void Awake()
 	{
 		explosionSpawn = this.transform;
@@ -16,6 +17,11 @@ public class MineDestroy : MonoBehaviour {
 	// Use this for initialization
 	void OnEnable () {
 		Invoke("Die", lifeTime);
+	}
+
+	void Update() 
+	{
+		Debug.Log (lifeTime);
 	}
 
 	void Die(){
@@ -29,7 +35,7 @@ public class MineDestroy : MonoBehaviour {
 		CancelInvoke ();
 	}
 
-	//destorys enemy if it collides with bullet
+	//destroys enemy if it collides with mine
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Enemy" )
 		{
