@@ -6,8 +6,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float speed;
 
-	int startingHealth;
-	int currentHealth;
+	float startingHealth;
+	float currentHealth;
 	PlayerHealth playerHealth;
 
 	void Awake ()
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (other.tag == "Enemy" )
 		{
 			Destroy(other.gameObject);
-			playerHealth.currentHealth -= 20;
+			playerHealth.currentHealth -= 30;
 		}
 	}
 }
