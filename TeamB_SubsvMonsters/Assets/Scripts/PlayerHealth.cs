@@ -12,16 +12,14 @@ public class PlayerHealth : MonoBehaviour {
 		currentHealth = startingHealth;
 	}
 
-	void OnGUI()
+	/*void Update ()
 	{
-		GUI.Label (new Rect(10, 10, 100, 20), "Hello World!");
-	}
-
-	/*void Damage ()
-	{
-		if (currentHealth <= 0)
-		{
-			//player gameover screen
-		}
+		GUIText (currentHealth + "/" + startingHealth);
 	}*/
+
+	public void TakeDamage (float amount)
+	{
+		currentHealth -= amount;
+		//hungerSlider.value = currentHunger;
+	}
 }

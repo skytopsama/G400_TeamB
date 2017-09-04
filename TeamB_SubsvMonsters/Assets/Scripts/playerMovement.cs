@@ -6,14 +6,19 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float speed;
 
-	float startingHealth;
-	float currentHealth;
-	PlayerHealth playerHealth;
+	//public Slider healthSlider;
+	PlayerHealth hp;
+	bool Dead;
 
 	void Awake ()
 	{
-		playerHealth = GetComponent <PlayerHealth> ();
-		currentHealth = startingHealth;
+		hp = GetComponent <PlayerHealth> ();
+		hp.currentHealth = hp.startingHealth;
+	}
+
+	void Start ()
+	{
+		Dead = false;
 	}
 
 	void FixedUpdate () {
@@ -29,13 +34,26 @@ public class PlayerMovement : MonoBehaviour {
 		float input = Input.GetAxis ("Vertical");
 		GetComponent<Rigidbody2D>().AddForce (gameObject.transform.up * speed * input);
 	}
-		
-	void OnTriggerEnter2D (Collider2D other)
+
+	void Update ()
 	{
+		if (hp.currentHealth == 0 && Dead == false)
+		{
+			Death();
+		}
+	}
+
+	void Death ()
+	{
+		Dead = true;
+		Destroy(this);
+	}
+		
+	void OnTriggerEnter2D (Collider2D other){
 		if (other.tag == "Enemy" )
 		{
 			Destroy(other.gameObject);
-			playerHealth.currentHealth -= 30;
+			hp.currentHealth -= 30;
 		}
 	}
 }
