@@ -6,7 +6,7 @@ public class BulletDestroy : MonoBehaviour {
 	public int speed;
 	public float lifeTime;
 	public int scoreValue;
-	private PlayerScore playerScore;
+	public PlayerScore playerScore;
 	//public int power;
 
 	// Use this for initialization
