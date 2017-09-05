@@ -754,6 +754,7 @@ GameObject:
   - component: {fileID: 1703806128}
   - component: {fileID: 1703806127}
   - component: {fileID: 1703806131}
+  - component: {fileID: 1703806132}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -853,6 +854,18 @@ MonoBehaviour:
   Head: {fileID: 1281291546}
   Body: {fileID: 1710696644}
   Thruster: {fileID: 1718742528}
+--- !u!114 &1703806132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1703806126}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ec7c37e15c1fe40a8521b60372a106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
 --- !u!4 &1710696644 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4047813893096678, guid: 5d34f8900e1d743afa136576a73dc46a,
