@@ -5,8 +5,6 @@ using UnityEngine;
 public class BulletDestroy : MonoBehaviour {
 	public int speed;
 	public float lifeTime;
-	public int scoreValue;
-	public PlayerScore playerScore;
 	//public int power;
 
 	// Use this for initialization
@@ -30,7 +28,6 @@ public class BulletDestroy : MonoBehaviour {
 	{
 		if (other.tag == "Enemy" )
 		{
-			playerScore.AddScore (scoreValue);
 			Destroy(other.gameObject);
 			Repool ();
 		}
