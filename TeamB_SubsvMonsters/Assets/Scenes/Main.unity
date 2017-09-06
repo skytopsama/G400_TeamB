@@ -425,12 +425,19 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: ba866b68ec1108748a5e60ce62a689f5,
+        type: 3}
     - target: {fileID: 212918505789429548, guid: 5d34f8900e1d743afa136576a73dc46a,
         type: 2}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114734774557966876, guid: 5d34f8900e1d743afa136576a73dc46a,
+        type: 2}
+      propertyPath: myFont
+      value: 
+      objectReference: {fileID: 12800000, guid: 27c652b81b2c820419534a2b8d15ba26,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
   m_IsPrefabParent: 0
@@ -850,11 +857,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb3f849d0bc05c4a83e3b453c19c8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BodyTexture1: {fileID: 2800000, guid: f67c1b442f89c8c4bbf11880f639319e, type: 3}
   HeadTexture1: {fileID: 2800000, guid: ba866b68ec1108748a5e60ce62a689f5, type: 3}
+  BodyTexture1: {fileID: 2800000, guid: f67c1b442f89c8c4bbf11880f639319e, type: 3}
   ThrusterTexture1: {fileID: 2800000, guid: 18e23b3d5ddf93c4e89c099a74061bf3, type: 3}
-  BodyTexture2: {fileID: 2800000, guid: f924b5a8084ca6143b7a6efa70e4844f, type: 3}
   HeadTexture2: {fileID: 2800000, guid: d001add079639d44e96cb409f8fbd4cc, type: 3}
+  BodyTexture2: {fileID: 2800000, guid: f924b5a8084ca6143b7a6efa70e4844f, type: 3}
   ThrusterTexture2: {fileID: 2800000, guid: 13facc4cd18142541a6bf88e9c04cc8c, type: 3}
   Head: {fileID: 1281291546}
   Body: {fileID: 1710696644}
