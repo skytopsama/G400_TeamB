@@ -14,6 +14,6 @@ public class PlayerHealth : MonoBehaviour {
 
 	void OnGUI ()
 	{
-		GUI.Label (new Rect (10, 10, 100, 20), "Health:" + currentHealth);
+		GUI.Label (new Rect (20, 20, 100, 50), "" + currentHealth);
 	}
 }

@@ -425,12 +425,11 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ba866b68ec1108748a5e60ce62a689f5,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 212918505789429548, guid: 5d34f8900e1d743afa136576a73dc46a,
         type: 2}
       propertyPath: m_WasSpriteAssigned
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d34f8900e1d743afa136576a73dc46a, type: 2}
@@ -830,7 +829,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 1737025292}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -853,9 +853,9 @@ MonoBehaviour:
   BodyTexture1: {fileID: 2800000, guid: f67c1b442f89c8c4bbf11880f639319e, type: 3}
   HeadTexture1: {fileID: 2800000, guid: ba866b68ec1108748a5e60ce62a689f5, type: 3}
   ThrusterTexture1: {fileID: 2800000, guid: 18e23b3d5ddf93c4e89c099a74061bf3, type: 3}
-  BodyTexture2: {fileID: 0}
-  HeadTexture2: {fileID: 0}
-  ThrusterTexture2: {fileID: 0}
+  BodyTexture2: {fileID: 2800000, guid: f924b5a8084ca6143b7a6efa70e4844f, type: 3}
+  HeadTexture2: {fileID: 2800000, guid: d001add079639d44e96cb409f8fbd4cc, type: 3}
+  ThrusterTexture2: {fileID: 2800000, guid: 13facc4cd18142541a6bf88e9c04cc8c, type: 3}
   Head: {fileID: 1281291546}
   Body: {fileID: 1710696644}
   Thruster: {fileID: 1718742528}
@@ -869,6 +869,74 @@ Transform:
   m_PrefabParentObject: {fileID: 4130707895797656, guid: 5d34f8900e1d743afa136576a73dc46a,
     type: 2}
   m_PrefabInternal: {fileID: 1017960086}
+--- !u!1 &1737025291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1737025292}
+  - component: {fileID: 1737025294}
+  - component: {fileID: 1737025293}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1737025292
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737025291}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0326664, y: 1.0326662, z: 1.0326662}
+  m_Children: []
+  m_Father: {fileID: 1703806130}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -626.8, y: 247.3}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1737025293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737025291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ba074fc0c7896774da41ebbf3d62b8cf, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1737025294
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737025291}
 --- !u!1 &1942378998
 GameObject:
   m_ObjectHideFlags: 0

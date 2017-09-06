@@ -14,10 +14,13 @@ public class CustomizationScript : MonoBehaviour {
 	public Transform Head;
 	public Transform Body;
 	public Transform Thruster;
+
+	private SpriteRenderer spriteRenderer;
 	//bool customON;
 
 	void Awake ()
 	{
+		spriteRenderer = GetComponent <SpriteRenderer> ();
 		Time.timeScale = 0.0f;
 		//customON = true;
 	}
@@ -39,7 +42,7 @@ public class CustomizationScript : MonoBehaviour {
 
 	void OnMouseDown ()
 	{
-		if (HeadTexture1)
+		if (HeadTexture2)
 		{
 			
 			//replace head transform
