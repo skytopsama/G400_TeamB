@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 21200000}
   - component: {fileID: 5000000}
   - component: {fileID: 5800000}
-  - component: {fileID: 114893596496808804}
   - component: {fileID: 114051568883749920}
   - component: {fileID: 82716027024044238}
   m_Layer: 10
@@ -215,15 +214,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   lifeTime: 2
---- !u!114 &114893596496808804
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc56002c5ff84b018b75a7d86fa9b5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireTime: 0.5

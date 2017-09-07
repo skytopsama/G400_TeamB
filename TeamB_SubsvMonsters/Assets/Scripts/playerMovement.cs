@@ -5,20 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
 	public float speed;
-
-	//public Slider healthSlider;
-	PlayerHealth hp;
-	bool Dead;
+	PlayerHealth playerHealth;
+	//bool Dead;
 
 	void Awake ()
 	{
-		hp = GetComponent <PlayerHealth> ();
-		hp.currentHealth = hp.startingHealth;
-	}
-
-	void Start ()
-	{
-		Dead = false;
+		playerHealth = GetComponent <PlayerHealth> ();
+		playerHealth.currentHealth = playerHealth.startingHealth;
 	}
 
 	void FixedUpdate () {
@@ -34,26 +27,17 @@ public class PlayerMovement : MonoBehaviour {
 		float input = Input.GetAxis ("Vertical");
 		GetComponent<Rigidbody2D>().AddForce (gameObject.transform.up * speed * input);
 	}
-
-	void Update ()
-	{
-		if (hp.currentHealth == 0 && Dead == false)
-		{
-			Death();
-		}
-	}
-
-	void Death ()
-	{
-		Dead = true;
-		Destroy(this);
-	}
 		
-	void OnTriggerEnter2D (Collider2D other){
+	void OnTriggerEnter2D (Collider2D other)
+	{
 		if (other.tag == "Enemy" )
 		{
 			Destroy(other.gameObject);
-			hp.currentHealth -= 30;
+			if (other.name == "Enemy1(Clone)")
+			{
+				playerHealth.currentHealth -= 10;
+			}
+			//Debug.Log (other.name);
 		}
 	}
 }

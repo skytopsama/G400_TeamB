@@ -26,7 +26,7 @@ public class EnemySpawning : MonoBehaviour {
 		Quaternion spawnRotation = Quaternion.identity;
 
 		Instantiate (enemy, spawnPosition, spawnRotation);
-		Debug.Log (spawnPosition);
+		//Debug.Log (spawnPosition);
 	}
 
 }
