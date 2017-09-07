@@ -39,21 +39,23 @@ public class PlayerMovement : MonoBehaviour {
 			}
 			//Debug.Log (other.name);
 		}
-		/*if (other.tag == "HealthDrop")
+		if (other.tag == "HealthDrop")
 		{
-			playerHealth.currentHealth += 20;
+			Destroy(other.gameObject);
+			playerHealth.currentHealth += 10;
 		}
 		if (other.tag == "HealthBoost")
 		{
-			playerHealth.startingHealth += 20;
+			Destroy(other.gameObject);
+			playerHealth.startingHealth += 10;
 		}
-		if (other.tag == "SpeedBoost")
+		/*if (other.tag == "SpeedBoost")
 		{
-			
+			Destroy(other.gameObject);
 		}
 		if (other.tag == "FieldWipe")
 		{
-
+			Destroy(other.gameObject);
 		}*/
 	}
 }
