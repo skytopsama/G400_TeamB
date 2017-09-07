@@ -15,10 +15,10 @@ public class CustomizationScript : MonoBehaviour {
 	public Transform Body;
 	public Transform Thruster;
 
-	/*void Awake ()
+	void Awake ()
 	{
 		Time.timeScale = 0.0f;
-	}*/
+	}
 		
 	void OnGUI ()
 	{
@@ -30,9 +30,9 @@ public class CustomizationScript : MonoBehaviour {
 		GUI.Box (new Rect (200, 275, 75, 75), BodyTexture2);
 		GUI.Box (new Rect (200, 350, 75, 75), ThrusterTexture2);
 		GUI.contentColor = Color.white;
-		/*if (GUI.Button (new Rect (100, 500, 100, 50), "Begin"))
+		if (GUI.Button (new Rect (100, 500, 100, 50), "Begin"))
 		{
 			Time.timeScale = 1.0f;
-		}*/
+		}
 	}
 }

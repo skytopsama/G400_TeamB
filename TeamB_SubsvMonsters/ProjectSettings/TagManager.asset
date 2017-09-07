@@ -5,10 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - HealthDrop
-  - HealthBoost
-  - SpeedBoost
-  - BigBomb
   layers:
   - Default
   - TransparentFX

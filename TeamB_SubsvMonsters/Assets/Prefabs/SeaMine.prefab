@@ -66,9 +66,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e2906673b7ca42e4b56a2620a503b5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 100000, guid: a7ed0315d0e664da9bcb03d47e23e682, type: 2}
+  m_Name:
+  m_EditorClassIdentifier:
+  explosion: {fileID: 1974977968112076, guid: 93e0bce64761542c792f296c8d922f41, type: 2}
   lifeTime: 10
 --- !u!212 &212163684388525816
 SpriteRenderer:
