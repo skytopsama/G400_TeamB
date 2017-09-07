@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour {
 		
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		if (other.tag == "Enemy" )
+		if (other.tag == "Enemy")
 		{
 			Destroy(other.gameObject);
 			if (other.name == "Enemy1(Clone)")
@@ -39,15 +39,17 @@ public class PlayerMovement : MonoBehaviour {
 			}
 			//Debug.Log (other.name);
 		}
-		/*if (other.tag == "HealthDrop")
+		if (other.name == "HealthDrop")
 		{
-			playerHealth.currentHealth += 20;
+			Destroy(other.gameObject);
+			playerHealth.currentHealth += 10;
 		}
-		if (other.tag == "HealthBoost")
+		if (other.name == "HealthBoost")
 		{
-			playerHealth.startingHealth += 20;
+			Destroy(other.gameObject);
+			playerHealth.startingHealth += 10;
 		}
-		if (other.tag == "SpeedBoost")
+		/*if (other.tag == "SpeedBoost")
 		{
 			
 		}

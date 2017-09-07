@@ -5,7 +5,6 @@ using UnityEngine;
 public class CamController : MonoBehaviour {
 
 	public GameObject player;
-
 	private Vector3 offset;
 
 	//used for following player
@@ -16,7 +15,6 @@ public class CamController : MonoBehaviour {
 	/*private Vector3
 		_min,
 		_max;*/
-
 
 	// Use this for initialization
 	void Start () 
@@ -55,5 +53,4 @@ public class CamController : MonoBehaviour {
 			transform.position = player.transform.position + offset;
 		}
 	}
-
 }
