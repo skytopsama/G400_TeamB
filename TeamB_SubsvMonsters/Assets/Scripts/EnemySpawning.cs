@@ -28,5 +28,4 @@ public class EnemySpawning : MonoBehaviour {
 		Instantiate (enemy, spawnPosition, spawnRotation);
 		//Debug.Log (spawnPosition);
 	}
-
 }

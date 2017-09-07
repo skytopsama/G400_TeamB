@@ -29,6 +29,7 @@ public class CustomizationScript : MonoBehaviour {
 		GUI.Box (new Rect (200, 200, 75, 75), HeadTexture2);
 		GUI.Box (new Rect (200, 275, 75, 75), BodyTexture2);
 		GUI.Box (new Rect (200, 350, 75, 75), ThrusterTexture2);
+		GUI.contentColor = Color.white;
 		if (GUI.Button (new Rect (100, 500, 100, 50), "Begin"))
 		{
 			Time.timeScale = 1.0f;
