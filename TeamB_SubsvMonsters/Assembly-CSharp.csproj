@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\DestroyByContact.cs" />
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\EnemySpawning.cs" />
+     <Compile Include="Assets\Scripts\GameOverManager.cs" />
      <Compile Include="Assets\Scripts\MineDestroy.cs" />
      <Compile Include="Assets\Scripts\MineFire.cs" />
      <Compile Include="Assets\Scripts\MyExplosion.cs" />
