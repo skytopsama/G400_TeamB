@@ -33,6 +33,7 @@ public class CustomizationScript : MonoBehaviour {
 		if (GUI.Button (new Rect (100, 500, 100, 50), "Begin"))
 		{
 			Time.timeScale = 1.0f;
+			Destroy (this);
 		}
 	}
 }
