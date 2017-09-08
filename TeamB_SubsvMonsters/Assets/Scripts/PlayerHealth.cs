@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour {
 
 	public float startingHealth = 100f;
 	public float currentHealth;
-	//public Font myFont;
+	public GUIStyle myStyle;
 
 	void Awake ()
 	{
@@ -15,10 +15,7 @@ public class PlayerHealth : MonoBehaviour {
 
 	void OnGUI ()
 	{
-		GUI.contentColor = Color.white;
-		//GUIStyle myStyle = new GUIStyle ();
-		//myStyle.font = myFont;
-		GUI.Label (new Rect (20, 20, 100, 50), "" + currentHealth);
+		GUI.Label (new Rect (90, 40, 50, 50), "" + currentHealth + "/" + startingHealth, myStyle);
 	}
 
 	void Update ()
