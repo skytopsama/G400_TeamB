@@ -9,7 +9,7 @@ public class EnemySpawning : MonoBehaviour {
 	public float spawnTime;
 
 	void Start(){
-		InvokeRepeating ("SpawnEnemies", 0.5f, spawnTime);
+		InvokeRepeating ("SpawnEnemies", 0.0f, spawnTime);
 	}
 
 	void SpawnEnemies()

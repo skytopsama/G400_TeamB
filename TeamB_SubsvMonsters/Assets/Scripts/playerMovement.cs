@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour {
 	void Awake ()
 	{
 		playerHealth = GetComponent <PlayerHealth> ();
-		playerHealth.currentHealth = playerHealth.currentHealth;
+		playerHealth.currentHealth = playerHealth.startingHealth;
 	}
 
 	void FixedUpdate () {

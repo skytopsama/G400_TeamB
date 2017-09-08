@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4946745796626554}
   - component: {fileID: 212918505789429548}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4413743081628030}
   - component: {fileID: 61559526229322616}
   - component: {fileID: 114010341958555890}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shotSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4130707895797656}
   - component: {fileID: 212722016674835586}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Thruster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4047813893096678}
   - component: {fileID: 212013445502989706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 50804954673713330}
   - component: {fileID: 114729420132767462}
   - component: {fileID: 114734774557966876}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4447116919336822}
   - component: {fileID: 114903619464600606}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mineSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1738679008620126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.383, z: 0}
+  m_LocalPosition: {x: 0, y: -1.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4614470333522988}
@@ -246,7 +246,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1257529279077896}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -313,8 +313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e81d3fcf0f84b5d80eafa9c36d7dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mine: {fileID: 0}
-  dropRate: 0
+  mine: {fileID: 1145371450881046, guid: 9ab7d9099cde64189851c3d75f805058, type: 2}
+  dropRate: 2
 --- !u!212 &212013445502989706
 SpriteRenderer:
   m_ObjectHideFlags: 1

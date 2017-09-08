@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletDestroy : MonoBehaviour {
-	public int speed;
+	public float speed;
 	public float lifeTime;
+	//prefab for explosion
+	public GameObject explosion;
 	//public int power;
 
-	// Use this for initialization
+	void Awake()
+	{
+		speed = 10.0f;
+	}
+
+
 	void OnEnable () {
 		GetComponent<Rigidbody2D>().velocity = transform.up.normalized * speed;
 		Invoke ("Repool", lifeTime);
@@ -15,6 +22,7 @@ public class BulletDestroy : MonoBehaviour {
 
 	void Repool(){
 		Debug.Log ("bullet destroyed");
+		Instantiate (explosion, transform.position, Quaternion.identity);
 		gameObject.SetActive (false);
 	}
 	
