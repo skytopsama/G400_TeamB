@@ -6,6 +6,7 @@ public class CamController : MonoBehaviour {
 
 	public GameObject player;
 	private Vector3 offset;
+	//PlayerHealth playerHealth;
 
 	//used for following player
 	public bool IsFollowing { get; set; }
@@ -15,6 +16,11 @@ public class CamController : MonoBehaviour {
 	/*private Vector3
 		_min,
 		_max;*/
+
+	/*void Awake ()
+	{
+		playerHealth = GetComponent <PlayerHealth> ();
+	}*/
 
 	// Use this for initialization
 	void Start () 
@@ -53,4 +59,12 @@ public class CamController : MonoBehaviour {
 			transform.position = player.transform.position + offset;
 		}
 	}
+
+	/*void Update ()
+	{
+		if (playerHealth.currentHealth == 0)
+		{
+			Destroy (this);
+		}
+	}*/
 }
