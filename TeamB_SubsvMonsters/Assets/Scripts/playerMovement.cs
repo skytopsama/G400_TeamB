@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float speed;
 	PlayerHealth playerHealth;
-	//bool Dead;
 
 	void Awake ()
 	{
@@ -39,19 +38,20 @@ public class PlayerMovement : MonoBehaviour {
 			}
 			//Debug.Log (other.name);
 		}
-		if (other.name == "HealthDrop")
+		if (other.tag == "HealthDrop")
 		{
 			Destroy(other.gameObject);
 			playerHealth.currentHealth += 10;
 		}
-		if (other.name == "HealthBoost")
+		if (other.tag == "HealthBoost")
 		{
 			Destroy(other.gameObject);
 			playerHealth.startingHealth += 10;
 		}
 		/*if (other.tag == "SpeedBoost")
 		{
-			
+			Destroy(other.gameObject);
+			speed += 10;
 		}
 		if (other.tag == "FieldWipe")
 		{
